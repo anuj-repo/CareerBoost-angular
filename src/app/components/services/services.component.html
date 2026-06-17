@@ -1,0 +1,24 @@
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Expand Your Knowledge & <span class="highlight">Achieve Your Goal</span></h2>
+      <p class="section-description">
+        We provide complete career transformation — from technical training to placement.
+        Our proven process has helped thousands land their dream jobs at top companies.
+      </p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 col-lg-4 mb-4" *ngFor="let service of services">
+        <div class="service-card">
+          <div class="service-icon">
+            <i [class]="service.icon"></i>
+          </div>
+          <div class="service-content">
+            <h5>{{ service.title }}</h5>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

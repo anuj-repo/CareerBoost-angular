@@ -1,0 +1,22 @@
+<section class="hero-banner">
+  <!-- Background images -->
+  <div
+    class="hero-slide"
+    *ngFor="let img of images; let i = index"
+    [class.active]="i === currentIndex"
+    [style.background-image]="'url(' + img + ')'"
+  ></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Get Job Ready With Expert Training</h1>
+    <div class="hero-search">
+      <input type="text" placeholder="Enter Your Keyword..">
+      <button class="btn-search">
+        <i class="fas fa-search"></i> Search
+      </button>
+    </div>
+    <p class="hero-tagline">Own your future by learning new skills & cracking interviews</p>
+  </div>
+</section>

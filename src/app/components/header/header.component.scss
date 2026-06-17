@@ -1,0 +1,158 @@
+.top-bar {
+  background: #3a3a3a;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 0.82rem;
+
+  span {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+
+    i {
+      color: #8bc34a;
+      margin-right: 8px;
+    }
+  }
+}
+
+.main-nav {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: #8bc34a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(45deg);
+      border-radius: 8px;
+
+      i {
+        color: #fff;
+        font-size: 1.3rem;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+
+      .logo-name {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #333;
+        line-height: 1.1;
+      }
+
+      .logo-tagline {
+        font-size: 0.7rem;
+        color: #8bc34a;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    li {
+      a {
+        display: block;
+        padding: 10px 15px;
+        color: #333;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+
+        &:hover,
+        &.active {
+          color: #8bc34a;
+        }
+
+        &.active {
+          position: relative;
+
+          &::before {
+            content: '[';
+            color: #8bc34a;
+            margin-right: 3px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-quote {
+    background: #8bc34a;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    margin-left: 20px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #7ab33d;
+    }
+  }
+
+  .mobile-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #eee;
+
+    &.open {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li a {
+        display: block;
+        padding: 12px 0;
+        color: #333;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-decoration: none;
+        border-bottom: 1px solid #f5f5f5;
+      }
+    }
+  }
+}

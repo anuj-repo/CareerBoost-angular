@@ -1,0 +1,36 @@
+.stats-section {
+  padding: 50px 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+
+  .stat-icon {
+    i {
+      font-size: 2.8rem;
+      color: #8bc34a;
+    }
+  }
+
+  .stat-info {
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #333;
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}

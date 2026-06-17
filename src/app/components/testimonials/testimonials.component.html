@@ -1,0 +1,30 @@
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-badge">Success Stories</span>
+      <h2>What Our <span class="highlight">Students Say</span></h2>
+      <p class="section-description">
+        Real stories from real people who transformed their careers with us.
+      </p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4 mb-4" *ngFor="let testimonial of testimonials">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star" *ngFor="let star of getStars(testimonial.rating)"></i>
+          </div>
+          <p class="testimonial-text">"{{ testimonial.text }}"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h6>{{ testimonial.name }}</h6>
+              <span>{{ testimonial.role }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

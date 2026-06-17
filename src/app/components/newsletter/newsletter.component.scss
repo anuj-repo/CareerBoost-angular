@@ -1,0 +1,61 @@
+.newsletter-section {
+  padding: 60px 0;
+  background: #3a3a3a;
+}
+
+h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.newsletter-form {
+  .form-label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .input-group {
+    display: flex;
+
+    .form-control {
+      flex: 1;
+      border: none;
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .btn-subscribe {
+      background: #8bc34a;
+      color: #fff;
+      border: none;
+      padding: 16px 30px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+      white-space: nowrap;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #7ab33d;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<section class="events-section" id="events">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Upcoming <span class="highlight">Events</span></h2>
+      <p class="section-description">
+        Join our free sessions to get a taste of what we offer. No registration fee required.
+      </p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 mb-4" *ngFor="let event of events">
+        <div class="event-card">
+          <div class="event-image">
+            <div class="event-date-badge">
+              <span class="day">{{ event.day }}</span>
+              <span class="month">{{ event.month }}</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div class="event-meta">
+              <span><i class="far fa-clock"></i> {{ event.time }}</span>
+              <span>|</span>
+              <span><i class="fas fa-map-marker-alt"></i> {{ event.location }}</span>
+            </div>
+            <h5>{{ event.title }}</h5>
+            <p>{{ event.description }}</p>
+            <a href="#" class="btn-read-more"><i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

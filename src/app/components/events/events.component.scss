@@ -1,0 +1,133 @@
+.events-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section-header {
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+
+    .highlight {
+      color: #8bc34a;
+    }
+  }
+
+  .section-description {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+.event-card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  .event-image {
+    min-width: 180px;
+    background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=80') center/cover;
+    position: relative;
+
+    .event-date-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #8bc34a;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 1;
+
+      .day {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 800;
+      }
+
+      .month {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .event-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+
+    .event-meta {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 0.8rem;
+      color: #888;
+
+      i {
+        color: #8bc34a;
+        margin-right: 4px;
+      }
+    }
+
+    h5 {
+      font-weight: 700;
+      color: #333;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    p {
+      color: #666;
+      font-size: 0.85rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      flex: 1;
+    }
+
+    .btn-read-more {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #8bc34a;
+      color: #fff;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #7ab33d;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .event-card {
+    flex-direction: column;
+
+    .event-image {
+      min-width: unset;
+      min-height: 150px;
+    }
+  }
+}

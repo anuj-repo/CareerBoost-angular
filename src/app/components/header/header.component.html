@@ -1,0 +1,56 @@
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="top-bar-left d-flex gap-4 align-items-center">
+      <span><i class="fas fa-phone-alt"></i> +91 98765 43210</span>
+      <span><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh</span>
+    </div>
+    <div class="top-bar-right d-flex gap-4 align-items-center">
+      <span><i class="fas fa-clock"></i> Mon - Sat 9.00 - 20.00</span>
+      <span><i class="fas fa-envelope"></i> info&#64;careerboost.in</span>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="main-nav">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="logo" routerLink="/home">
+      <div class="logo-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">CareerBoost</span>
+        <span class="logo-tagline">Get Job Ready</span>
+      </div>
+    </a>
+
+    <div class="nav-right d-flex align-items-center">
+      <ul class="nav-menu d-none d-lg-flex">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#testimonials">TESTIMONIALS</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+      <a href="#contact" class="btn-quote">GET A QUOTE</a>
+    </div>
+
+    <button class="mobile-toggle d-lg-none" (click)="toggleMenu()" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu d-lg-none" [class.open]="isMenuOpen">
+    <ul>
+      <li><a href="#" (click)="toggleMenu()">HOME</a></li>
+      <li><a href="#services" (click)="toggleMenu()">SERVICES</a></li>
+      <li><a href="#pricing" (click)="toggleMenu()">PRICING</a></li>
+      <li><a href="#testimonials" (click)="toggleMenu()">TESTIMONIALS</a></li>
+      <li><a href="#events" (click)="toggleMenu()">EVENTS</a></li>
+      <li><a href="#contact" (click)="toggleMenu()">CONTACT US</a></li>
+    </ul>
+  </div>
+</nav>

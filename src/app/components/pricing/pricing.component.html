@@ -1,0 +1,27 @@
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Our Awesome <span class="highlight">Pricing Plans</span> For You</h2>
+      <p class="section-description">
+        Affordable plans designed to fit every budget. Invest in yourself today, get returns for a lifetime.
+      </p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 col-lg-3 mb-4" *ngFor="let plan of plans">
+        <div class="pricing-card" [class.popular]="plan.popular">
+          <div class="price-tag">
+            <span class="amount">{{ plan.price }}</span>
+            <span class="period">{{ plan.period }}</span>
+          </div>
+          <h4 class="plan-name">{{ plan.name }}</h4>
+          <ul class="features-list">
+            <li *ngFor="let feature of plan.features">
+              <i class="fas fa-check-circle"></i> {{ feature }}
+            </li>
+          </ul>
+          <a href="#contact" class="btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
