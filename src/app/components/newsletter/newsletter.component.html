@@ -10,7 +10,12 @@
           <label class="form-label">Your Email Address</label>
           <div class="input-group">
             <input type="email" class="form-control" placeholder="Enter email address..." [(ngModel)]="email">
-            <button class="btn-subscribe" (click)="subscribe()">Subscribe</button>
+            <button class="btn-subscribe" (click)="subscribe()" [disabled]="loading">
+              {{ loading ? 'Subscribing...' : 'Subscribe' }}
+            </button>
+          </div>
+          <div class="feedback-msg" *ngIf="message" [class.success]="success" [class.error]="!success">
+            {{ message }}
           </div>
         </div>
       </div>

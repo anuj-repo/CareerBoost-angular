@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,6 +14,7 @@ import { EventsComponent } from './components/events/events.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,14 @@ import { HomeComponent } from './home/home.component';
     EventsComponent,
     NewsletterComponent,
     TestimonialsComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

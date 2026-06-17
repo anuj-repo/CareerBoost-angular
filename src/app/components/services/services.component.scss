@@ -25,6 +25,10 @@
   }
 }
 
+.highlight {
+  color: #8bc34a;
+}
+
 .service-card {
   display: flex;
   align-items: flex-start;
@@ -67,6 +71,99 @@
       line-height: 1.7;
       margin: 0;
       font-size: 0.9rem;
+    }
+  }
+}
+
+// Course cards
+.courses-section {
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+  }
+}
+
+.course-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  border: 1px solid #eee;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+  }
+
+  .course-category {
+    display: inline-block;
+    background: rgba(139, 195, 74, 0.1);
+    color: #8bc34a;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  h5 {
+    font-weight: 700;
+    color: #333;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .course-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    span {
+      font-size: 0.8rem;
+      color: #888;
+
+      i {
+        color: #8bc34a;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+
+    .course-price {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #333;
+    }
+
+    .btn-enroll {
+      background: #8bc34a;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #7ab33d;
+      }
     }
   }
 }

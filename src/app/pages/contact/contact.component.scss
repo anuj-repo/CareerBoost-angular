@@ -1,0 +1,150 @@
+.contact-page {
+  padding-bottom: 80px;
+}
+
+.contact-banner {
+  position: relative;
+  background: url('/assets/images/banner/bnr2.jpg') center/cover;
+  padding: 80px 0;
+  text-align: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+
+  .info-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background: #8bc34a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+
+  h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+}
+
+.contact-form-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eee;
+
+  h3 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .form-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .form-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+  }
+
+  .form-control {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+
+    &:focus {
+      border-color: #8bc34a;
+      box-shadow: 0 0 0 3px rgba(139, 195, 74, 0.1);
+    }
+  }
+
+  .btn-submit {
+    background: #8bc34a;
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #7ab33d;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.feedback-msg {
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  i {
+    margin-right: 8px;
+  }
+
+  &.success {
+    color: #8bc34a;
+  }
+
+  &.error {
+    color: #ff5252;
+  }
+}

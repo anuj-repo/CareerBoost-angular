@@ -56,6 +56,25 @@ p {
       &:hover {
         background: #7ab33d;
       }
+
+      &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .feedback-msg {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    &.success {
+      color: #8bc34a;
+    }
+
+    &.error {
+      color: #ff5252;
     }
   }
 }
